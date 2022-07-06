@@ -1,0 +1,11 @@
+#!/bin/bash
+
+SCRIPT_DIR=$(dirname $0)
+
+export NVM_DIR=$HOME/.nvm
+source $NVM_DIR/nvm.sh
+nvm use > /dev/null 2>&1
+
+source $SCRIPT_DIR/.venv/bin/activate
+
+npx acc $@

@@ -1,0 +1,10 @@
+{
+    "go.toolsEnvVars": {"GO111MODULE": "on"},
+    "gopls": {
+        "build.experimentalWorkspaceModule": true
+    },
+    "command-runner.commands": {
+        "compile and test": "cd ${fileDirname}; go build -o automatic_binary_from_main ./main.go; cd ${workspaceFolder}; oj test -c ${fileDirname}/automatic_binary_from_main -d ${fileDirname}/tests",
+        "acc submit": "cd ${fileDirname} && ../../acc submit ${file} || cd ../../"
+    }
+}

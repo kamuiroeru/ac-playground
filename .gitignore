@@ -1,0 +1,5 @@
+node_modules
+.venv
+!.vscode
+
+automatic_binary_from_main
