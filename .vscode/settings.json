@@ -1,5 +1,4 @@
 {
-    "go.toolsEnvVars": {"GO111MODULE": "on"},
     "gopls": {
         "build.experimentalWorkspaceModule": true
     },
